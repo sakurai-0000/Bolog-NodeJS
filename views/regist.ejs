@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hinata</title>
+    <link rel="stylesheet" type="text/css" href="../public/css/main.css">
+</head>
+
+<body>
+    <div align="center">
+        <p><%- content %></p>
+        <form action="/upload" method="POST">
+            <table>
+                <tr>
+                    <th>グループ名</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="grp"></td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                    <th>期</th>
+                    <th>名前</th>
+                    <th>生年月日</th>
+                    <th>星座</th>
+                    <th>身長</th>
+                    <th>出身地</th>
+                    <th>血液型</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="gene"></td>
+                    <td><input type="text" name="name_jp"></td>
+                    <td><input type="text" name="birth"></td>
+                    <td><input type="text" name="star"></td>
+                    <td><input type="text" name="height"></td>
+                    <td><input type="text" name="birthplace"></td>
+                    <td><input type="text" name="blood"></td>
+                </tr>
+            </table>
+            <input type="submit" value="Join!">
+        </form>
+    </div>
+</body>
+
+</html>

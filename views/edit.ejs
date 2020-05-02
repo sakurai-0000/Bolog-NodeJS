@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hinata</title>
+    <link rel="stylesheet" type="text/css" href="../public/css/main.css" >
+</head>
+
+<body>
+    <div align="center">
+        <p><%- content %></p>
+        <form action=/upload?grp=<%= grp %>&gene=<%= gene %>&num=<%= num %> method="POST">
+            <table>
+                <tr>
+                    <th>期</th>
+                    <th>名前</th>
+                    <th>生年月日</th>
+                    <th>星座</th>
+                    <th>身長</th>
+                    <th>出身地</th>
+                    <th>血液型</th>
+                </tr>
+                <tr>
+                    <td><%= gene %></td>
+                    <td><input type="text" name="name_jp" value="<%= data["name_jp"] %>"></td>
+                    <td><input type="text" name="birth" value="<%= data["birth"] %>"></td>
+                    <td><input type="text" name="star" value="<%= data["star"] %>"></td>
+                    <td><input type="text" name="height" value="<%= data["height"] %>"></td>
+                    <td><input type="text" name="birthplace" value="<%= data["birthplace"] %>"></td>
+                    <td><input type="text" name="blood" value="<%= data["blood"] %>"></td>
+                </tr>
+            </table>
+            <input type="submit" value="Join!">
+        </form>
+    </div>
+</body>
+
+</html>

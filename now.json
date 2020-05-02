@@ -1,0 +1,50 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "index.js",
+            "use": "@now/node"
+        },
+        {
+            "src": "public/css/main.css",
+            "use": "@now/static"
+        }
+    ],
+    "routes": [
+        {
+            "src": "(/)",
+            "methods": [
+                "GET"
+            ],
+            "dest": "index.js"
+        },
+        {
+            "src": "(/list)",
+            "methods": [
+                "GET"
+            ],
+            "dest": "index.js"
+        },
+        {
+            "src": "(/regist)",
+            "methods": [
+                "GET"
+            ],
+            "dest": "index.js"
+        },
+        {
+            "src": "(/edit)",
+            "methods": [
+                "GET"
+            ],
+            "dest": "index.js"
+        },
+        {
+            "src": "(/upload)",
+            "methods": [
+                "POST"
+            ],
+            "dest": "index.js"
+        }
+    ]
+}

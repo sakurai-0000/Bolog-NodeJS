@@ -1,0 +1,227 @@
+{
+    "group": "hinata",
+    "menber": {
+        "1": {
+            "0": {
+                "name_jp": "潮紗理菜",
+                "name_en": "Usio Sarina",
+                "birth": "1997/12/26",
+                "star": "やぎ座",
+                "height": "157",
+                "birthplace": "神奈川県",
+                "blood": "O"
+            },
+            "1": {
+                "name_jp": "影山優佳",
+                "name_en": "Kageyama Yuka",
+                "birth": "2001/5/8",
+                "star": "おうし座",
+                "height": "156",
+                "birthplace": "東京都",
+                "blood": "O"
+            },
+            "2": {
+                "name_jp": "加藤史穂帆",
+                "name_en": "Kato Shiho",
+                "birth": "1998/2/2",
+                "star": "みずがめ座",
+                "height": "160",
+                "birthplace": "東京都",
+                "blood": "A"
+            },
+            "3": {
+                "name_jp": "斎藤京子",
+                "name_en": "Saito Kyoko",
+                "birth": "1997/9/5",
+                "star": "おとめ座",
+                "height": "157",
+                "birthplace": "東京都",
+                "blood": "A"
+            },
+            "4": {
+                "name_jp": "佐々木久美",
+                "name_en": "Sasaki Kumi",
+                "birth": "1996/1/22",
+                "star": "みずがめ座",
+                "height": "167.5",
+                "birthplace": "千葉県",
+                "blood": "O"
+            },
+            "5": {
+                "name_jp": "佐々木美玲",
+                "name_en": "Sasaki Mirei",
+                "birth": "1999/12/17",
+                "star": "いて座",
+                "height": "165",
+                "birthplace": "兵庫県",
+                "blood": "O"
+            },
+            "6": {
+                "name_jp": "高瀬愛奈",
+                "name_en": "Takase Mana",
+                "birth": "1998/9/20",
+                "star": "おとめ座",
+                "height": "157",
+                "birthplace": "大阪府",
+                "blood": "O"
+            },
+            "7": {
+                "name_jp": "高本彩花",
+                "name_en": "Takamoto Ayaka",
+                "birth": "1998/11/2",
+                "star": "さそり座",
+                "height": "162.5",
+                "birthplace": "神奈川県",
+                "blood": "B"
+            },
+            "8": {
+                "name_jp": "東村芽衣",
+                "name_en": "Higasimura Mei",
+                "birth": "1998/8/23",
+                "star": "おとめ座",
+                "height": "154",
+                "birthplace": "奈良県",
+                "blood": "O"
+            },
+            "9": {
+                "name_jp": "柿崎芽実",
+                "name_en": "Kakizaki Memi",
+                "birth": "2001/12/2",
+                "star": "いて座",
+                "height": "156",
+                "birthplace": "長野県",
+                "blood": "A"
+            },
+            "10": {
+                "name_jp": "井口眞緒",
+                "name_en": "Iguchi Mao",
+                "birth": "1995/11/10",
+                "star": "さそり座",
+                "height": "163",
+                "birthplace": "新潟",
+                "blood": "AB"
+            }
+        },
+        "2": {
+            "0": {
+                "name_jp": "金村美玖",
+                "name_en": "Miku Kanemura",
+                "birth": "2002/9/10",
+                "star": "おとめ座",
+                "height": "163.0",
+                "birthplace": "埼玉県",
+                "blood": "O"
+            },
+            "1": {
+                "name_jp": "河田陽菜",
+                "name_en": "Kawata Hina",
+                "birth": "2001/7/23",
+                "star": "しし座",
+                "height": "154",
+                "birthplace": "山口県",
+                "blood": "B"
+            },
+            "2": {
+                "name_jp": "小坂菜緒",
+                "name_en": "Kosaka Nao",
+                "birth": "2002/9/7",
+                "star": "おとめ座",
+                "height": "161.5",
+                "birthplace": "大阪府",
+                "blood": "O"
+            },
+            "3": {
+                "name_jp": "冨田鈴香花",
+                "name_en": "Tomita Suzuka",
+                "birth": "2001/1/18",
+                "star": "やぎ座",
+                "height": "165",
+                "birthplace": "神奈川県",
+                "blood": "A"
+            },
+            "4": {
+                "name_jp": "丹生明里",
+                "name_en": "Nibu Akari",
+                "birth": "2001/2/15",
+                "star": "みずがめ座",
+                "height": "156.5",
+                "birthplace": "埼玉県",
+                "blood": "AB"
+            },
+            "5": {
+                "name_jp": "濱岸ひより",
+                "name_en": "Hamagisi Hiyori",
+                "birth": "2002/9/28",
+                "star": "てんびん座",
+                "height": "167",
+                "birthplace": "福岡県",
+                "blood": "A"
+            },
+            "6": {
+                "name_jp": "松田好花",
+                "name_en": "Konoka Matsuda",
+                "birth": "1999/4/27",
+                "star": "おうし座",
+                "height": "157.2",
+                "birthplace": "京都府",
+                "blood": "A"
+            },
+            "7": {
+                "name_jp": "宮田愛萌",
+                "name_en": "Miyata Manamo",
+                "birth": "1998/4/28",
+                "star": "おうし座",
+                "height": "157.5",
+                "birthplace": "東京都",
+                "blood": "A"
+            },
+            "8": {
+                "name_jp": "渡邊美穂",
+                "name_en": "Watanabe Miho",
+                "birth": "2000/2/24",
+                "star": "うお座",
+                "height": "158.6",
+                "birthplace": "埼玉県",
+                "blood": "AB"
+            }
+        },
+        "3": {
+            "0": {
+                "name_jp": "上村ひなの",
+                "name_en": "Kamimura Hinano",
+                "birth": "2004/4/12",
+                "star": "おひつじ座",
+                "height": "162",
+                "birthplace": "東京都",
+                "blood": "AB"
+            },
+            "1": {
+                "name_jp": "高橋未来虹",
+                "name_en": "Takahasi Mikuni",
+                "birth": "2003/9/27",
+                "star": "てんびん座",
+                "height": "i68.5",
+                "birthplace": "東京都",
+                "blood": "B"
+            },
+            "2": {
+                "name_jp": "森本茉莉",
+                "name_en": "Morimoto Marii",
+                "birth": "2004/2/23",
+                "star": "うお座",
+                "height": "159.6",
+                "birthplace": "東京都",
+                "blood": "A"
+            },
+            "3": {
+                "name_jp": "山口陽世",
+                "name_en": "Yamaguchi Haruyo",
+                "birth": "2004/2/23",
+                "star": "うお座",
+                "height": "151",
+                "birthplace": "鳥取県",
+                "blood": "O"
+            }
+        }
+    }
+}

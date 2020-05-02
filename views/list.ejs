@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hinata</title>
+    <link rel="stylesheet" type="text/css" href="public/css/main.css">
+</head>
+
+<body>
+    <div align="center">
+        <p><%- content %></p>
+        <div>
+            <table>
+                <tr>
+                    <th>期</th>
+                    <th>名前</th>
+                    <th>生年月日</th>
+                    <th>星座</th>
+                    <th>身長</th>
+                    <th>出身地</th>
+                    <th>血液型</th>
+                    <th></th>
+                </tr>
+                <% for (var i=1; i <= Object.keys(data["menber"]).length; i++ ) { %>
+                <% for (var j=0; j < Object.keys(data["menber"][i]).length; j++ ) { %>
+                <tr>
+                    <td><%= i %></td>
+                    <td><%= data["menber"][i][j]["name_jp"] %></td>
+                    <td><%= data["menber"][i][j]["birth"] %></td>
+                    <td><%= data["menber"][i][j]["star"] %></td>
+                    <td><%= data["menber"][i][j]["height"] %></td>
+                    <td><%= data["menber"][i][j]["birthplace"] %></td>
+                    <td><%= data["menber"][i][j]["blood"] %></td>
+                    <td><input type="button"
+                            onclick="location.href='<%= link_e.href %>?grp=<%= data["group"] %>&gene=<%= i %>&num=<%= j %>'"
+                            value="<%= link_e.text %>">
+                    </td>
+                </tr>
+                <% } %>
+                <% } %>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

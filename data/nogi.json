@@ -1,0 +1,115 @@
+{
+    "group": "nogi",
+    "menber": {
+        "1": {
+            "0": {
+                "name_jp": "秋元真夏",
+                "name_en": "Akimoto Manatsu",
+                "birth": "1993/8/20",
+                "star": "しし座",
+                "height": "154",
+                "birthplace": "",
+                "blood": "B"
+            },
+            "1": {
+                "name_jp": "生田絵梨花",
+                "name_en": "Ikuta Erika",
+                "birth": "1997/1/22",
+                "star": "みずがめ座",
+                "height": "160",
+                "birthplace": "",
+                "blood": "A"
+            },
+            "2": {
+                "name_jp": "井上小百合",
+                "name_en": "Inoue Sayuri",
+                "birth": "1994/12/14",
+                "star": "いて座",
+                "height": "156",
+                "birthplace": "",
+                "blood": "B"
+            },
+            "3": {
+                "name_jp": "齋藤飛鳥",
+                "name_en": ",Saito Asuka",
+                "birth": "1998/8/10",
+                "star": "しし座",
+                "height": "158",
+                "birthplace": "",
+                "blood": "O"
+            },
+            "4": {
+                "name_jp": "白石麻衣",
+                "name_en": "Siraisi Mai",
+                "birth": "1992/8/20",
+                "star": "しし座",
+                "height": "162",
+                "birthplace": "",
+                "blood": "A"
+            },
+            "5": {
+                "name_jp": "高山一実",
+                "name_en": "Takayama Kazumi",
+                "birth": "1994/2/8",
+                "star": "みずがめ座",
+                "height": "162",
+                "birthplace": "",
+                "blood": "A"
+            },
+            "6": {
+                "name_jp": "中田花奈",
+                "name_en": "Nakata Kana",
+                "birth": "1994/8/6",
+                "star": "しし座",
+                "height": "158",
+                "birthplace": "",
+                "blood": "A"
+            },
+            "7": {
+                "name_jp": "樋口日奈",
+                "name_en": "Higuchi Hina",
+                "birth": "1998/1/31",
+                "star": "みずがめ座",
+                "height": "159",
+                "birthplace": "",
+                "blood": "A"
+            },
+            "8": {
+                "name_jp": "星野みなみ",
+                "name_en": "Hoshino Minami",
+                "birth": "1998/2/6",
+                "star": "みずがめ座",
+                "height": "155",
+                "birthplace": "",
+                "blood": "B"
+            },
+            "9": {
+                "name_jp": "松村沙友理",
+                "name_en": "Matsumura Sayuri",
+                "birth": "1992/8/27",
+                "star": "おとめ座",
+                "height": "164",
+                "birthplace": "",
+                "blood": "B"
+            },
+            "10": {
+                "name_jp": "和田まあや",
+                "name_en": "Wada Maya",
+                "birth": "1998/4/23",
+                "star": "おうし座",
+                "height": "160",
+                "birthplace": "",
+                "blood": "O"
+            },
+            "11": {
+                "name_jp": "和田まあや",
+                "name_en": " ",
+                "birth": "//",
+                "star": "",
+                "height": "",
+                "birthplace": "",
+                "blood": ""
+            }
+        }
+    }
+}

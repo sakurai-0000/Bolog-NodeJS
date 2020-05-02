@@ -10,11 +10,14 @@ app.set('views', path.join(__dirname, 'views'));
 app.set("view engine", "ejs");
 
 const { readFileSync } = require('fs');
+const dataNogi = readFileSync(join(__dirname, './data/nogi.json'));
 const dataKeyaki = readFileSync(join(__dirname, './data/keyaki.json'));
 const dataHinata = readFileSync(join(__dirname, './data/hinata.json'));
+const nogi = JSON.parse(dataNogi, 'utf8');
 const keyaki = JSON.parse(dataKeyaki, 'utf8');
 const hinata = JSON.parse(dataHinata, 'utf8');
 const allData = {
+    nogi: nogi,
     keyaki: keyaki,
     hinata: hinata
 };
@@ -35,7 +38,9 @@ app.get('/list', (req, res) => {
             title: 'list',
             content: 'listページです！',
             link_e: { href: '/edit', text: '編集' },
-            data: (req.query.grp === 'keyaki') ? allData["keyaki"] : allData["hinata"],
+            data: (req.query.grp === 'nogi') ? allData["nogi"]
+                : (req.query.grp === 'keyaki') ? allData["keyaki"]
+                    : (req.query.grp === 'hinata')
         })
 });
 
@@ -51,7 +56,9 @@ app.get('/regist', (req, res) => {
 
 // 編集
 app.get('/edit', (req, res) => {
-    const data = (req.query.grp === "keyaki") ? allData["keyaki"] : allData["hinata"];
+    const data = (req.query.grp === "nogi") ? allData["nogi"]
+        : (req.query.grp === "keyaki") ? allData["keyaki"]
+            : allData["hinata"];
     res.render('edit.ejs',
         {
             title: 'edit',

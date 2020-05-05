@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Hinata</title>
-    <link rel="stylesheet" type="text/css" href="../public/css/main.css" >
+    <link rel="stylesheet" type="text/css" href="../public/css/main.css">
 </head>
 
 <body>
@@ -13,27 +13,42 @@
         <form action=/upload?grp=<%= grp %>&gene=<%= gene %>&num=<%= num %> method="POST">
             <table>
                 <tr>
-                    <th>期</th>
-                    <th>名前</th>
-                    <th>生年月日</th>
-                    <th>星座</th>
-                    <th>身長</th>
-                    <th>出身地</th>
-                    <th>血液型</th>
+                    <td>グループ</td>
+                    <td><%- include('./function/_getGroupName', {group: grp}); %></td>
                 </tr>
                 <tr>
+                    <td>期</td>
                     <td><%= gene %></td>
+                </tr>
+                <tr>
+                    <td>名前</td>
                     <td><input type="text" name="name_jp" value="<%= data["name_jp"] %>"></td>
+                </tr>
+                <tr>
+                    <td>生年月日</td>
                     <td><input type="text" name="birth" value="<%= data["birth"] %>"></td>
+                </tr>
+                <tr>
+                    <td>星座</td>
                     <td><input type="text" name="star" value="<%= data["star"] %>"></td>
+                </tr>
+                <tr>
+                    <td>身長</td>
                     <td><input type="text" name="height" value="<%= data["height"] %>"></td>
+                </tr>
+                <tr>
+                    <td>出身地</td>
                     <td><input type="text" name="birthplace" value="<%= data["birthplace"] %>"></td>
+                </tr>
+                <tr>
+                    <td>血液型</td>
                     <td><input type="text" name="blood" value="<%= data["blood"] %>"></td>
                 </tr>
             </table>
             <input type="submit" value="Join!">
         </form>
     </div>
+    <%- include('./common/_footer', null) %>
 </body>
 
 </html>

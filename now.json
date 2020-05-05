@@ -12,6 +12,10 @@
         {
             "src": "public/css/main.css",
             "use": "@now/static"
+        },
+        {
+            "src": "public/img/*.png",
+            "use": "@now/static"
         }
     ],
     "routes": [

@@ -6,6 +6,10 @@
             "use": "@now/node"
         },
         {
+            "src": "public/js/*.js",
+            "use": "@now/static"
+        },
+        {
             "src": "public/css/main.css",
             "use": "@now/static"
         }
@@ -34,6 +38,13 @@
         },
         {
             "src": "(/edit)",
+            "methods": [
+                "GET"
+            ],
+            "dest": "index.js"
+        },
+        {
+            "src": "(/profile)",
             "methods": [
                 "GET"
             ],

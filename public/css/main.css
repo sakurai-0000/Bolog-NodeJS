@@ -1,3 +1,40 @@
+* {
+    margin: 0; padding: 0;
+}
+
+img {
+border:0 none;
+vertical-align: top;
+width: 100%;
+height: auto;
+margin: 0;
+padding: 0;
+}
+
+/* header */
+header {
+    width: 100%;
+    padding: 15px 0;
+    margin : 0 auto;
+    text-align: center;
+}
+
+header .headline {
+    font-size: 32px;
+}
+
+.nav-list {
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+.nav-list-item {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
 th,td 
 {
     border: solid 1px;
@@ -9,3 +46,101 @@ table
 {
     border-collapse: collapse;
 }
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    /* position: fixed; */
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #99FFFF;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav p {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+  }
+
+  .sidenav a {
+    padding: 6px 8px 6px 30px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 10px;}
+  }
+
+  /* profile */
+
+  .section{
+    position: relative;
+  }
+
+  .menber-box{
+    padding: 120px 0 0 80px;
+    overflow: auto;
+    clear: both;
+    z-index: 100;
+    position: relative;
+    width: 770px;
+  }
+
+  .menber-image{
+    width: 380px;
+    float: left;
+  }
+
+  .menber-image-portfolio{
+    /* width: 400px;
+    height: 507px; */
+  }
+
+  .menber-info{
+    width: 300px;
+    padding: 40px 0 40px 50px;
+    float: left;
+  }
+
+  .menber-info-head{
+    margin: 0 0 40px 0;
+  }
+
+  .menber-info-head-name{
+    font-size: 30px;
+  }
+
+  .menber-info-head-name-kana{
+    color: #c6c6c6;
+    font-size: 1.2rem;
+  }
+
+  .menber-info-table{
+    border-spacing: 0;
+  }
+
+  .menber-info-td-name{
+    border: 0px none;
+    color:#aac8da;
+    padding: 0 24px 10px 0;
+  }
+
+  .menber-info-td-text{
+    border: 0px none;
+    empty-cells: show;
+    vertical-align: top;
+    text-align: left;
+  }

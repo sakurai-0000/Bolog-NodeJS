@@ -8,13 +8,8 @@
 </head>
 
 <body>
-    <div align="center">
-        <p><%- content %></p>
-        <p><a href="/list?grp=nogi">乃木坂</a></p>
-        <p><a href="/list?grp=keyaki">欅坂</a></p>
-        <p><a href="/list?grp=hinata">日向坂</a></p>
-        <input type="button" onclick="location.href='/regist'" value="新メンバー登録">
-    </div>
+    <%- include('./common/_header', null) %>
+    <%- include('./common/_sidevar', null) %>
 </body>
 
 </html>

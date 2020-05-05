@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hinata</title>
+    <link rel="stylesheet" type="text/css" href="../public/css/main.css">
+</head>
+
+<body>
+    <%- include('./common/_header', null) %>
+    <div align="center">
+        <input type="button" onclick="location.href='/'" value="Home">
+        <div class="contents">
+            <div class="main-contents">
+                <div class=section>
+                    <div class=menber-box>
+                        <div class="menber-image">
+                            <img src=""
+                                alt="img" class="menber-image-portfolio">
+                        </div>
+                        <div class="menber-info">
+                            <div class="menber-info-head">
+                                <div class=menber-info-head-name>
+                                    <%= data.name_jp %>
+                                </div>
+                                <div class=menber-info-head-name-kana>
+                                    <%= data.name_en %>
+                                </div>
+                            </div>
+                            <table class="menber-info-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="menber-info-td-name">生年月日</td>
+                                        <td class="menber-info-td-text"><%= data.birth %></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="menber-info-td-name">星座</td>
+                                        <td class="menber-info-td-text"><%= data.star %></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="menber-info-td-name">身長</td>
+                                        <td class="menber-info-td-text"><%= data.height %>cm</td>
+                                    </tr>
+                                    <tr></tr>
+                                    <tr>
+                                        <td class="menber-info-td-name">出身地</td>
+                                        <td class="menber-info-td-text"><%= data.birthplace %></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="menber-info-td-name">血液型</td>
+                                        <td class="menber-info-td-text"> <%= data.blood %>型</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

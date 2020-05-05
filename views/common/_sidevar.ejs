@@ -1,0 +1,17 @@
+ <!-- sidevar(right) menber list -->
+<div class="sidenav">
+    <% for(const group in data) { %>
+        <% if (group === "nogi") {%>
+            <p>乃木坂</p>
+        <% }else if (group === "keyaki"){ %>
+            <p>欅坂</p>
+        <% }else{ %>
+            <p>日向坂</p>
+        <% } %>
+        <% for (const gene in data[group]) { %>
+            <% data[group][gene].map((x) => { %>
+                <a href="/profile?grp=<%= group %>&gene=<%= gene %>&num=<%= x.num %>"><%= x.name_jp %></a>
+            <% }); %>
+        <% } %>
+    <% } %>
+</div>

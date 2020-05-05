@@ -9,6 +9,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.set('views', path.join(__dirname, 'views'));
 app.set("view engine", "ejs");
 
+const makeData = require('./public/js/makeData.js');
+
 const { readFileSync } = require('fs');
 const dataNogi = readFileSync(join(__dirname, './data/nogi.json'));
 const dataKeyaki = readFileSync(join(__dirname, './data/keyaki.json'));
@@ -22,12 +24,16 @@ const allData = {
     hinata: hinata
 };
 
+// GroupNmae + Name
+const groupAndName = makeData.makeGroupAndName(allData);
+
 // Top
 app.get('/', (req, res) => {
     res.render('top.ejs',
         {
             title: 'top',
             content: 'トップページです！',
+            data: groupAndName,
         })
 })
 
@@ -40,9 +46,19 @@ app.get('/list', (req, res) => {
             link_e: { href: '/edit', text: '編集' },
             data: (req.query.grp === 'nogi') ? allData["nogi"]
                 : (req.query.grp === 'keyaki') ? allData["keyaki"]
-                    : (req.query.grp === 'hinata')
+                    : allData["hinata"]
         })
 });
+
+// プロフィール
+app.get('/profile', (req, res) => {
+    res.render('profile.ejs',
+        {
+            title: 'profile',
+            content: '個人ページです！',
+            data: allData[req.query.grp]["menber"][req.query.gene][req.query.num],
+        })
+})
 
 // 登録
 app.get('/regist', (req, res) => {
@@ -75,7 +91,7 @@ app.get('/result', (req, res) => {
     res.render('result.ejs',
         {
             title: 'result',
-            content: 'resultページです！',
+            content: '完了です！',
         })
 })
 
@@ -83,10 +99,10 @@ app.get('/result', (req, res) => {
 app.post('/upload', (req, res) => {
     if (req.query.gene) {
         // edit
-        allData[req.query.grp]["menber"][req.query.gene][req.query.num] = getData(req.body);
+        allData[req.query.grp]["menber"][req.query.gene][req.query.num] = makeData.makeJson(req.body);
     } else {
         // regist
-        allData[req.body.grp]["menber"][req.body.gene][Object.keys(allData[req.body.grp]["menber"][req.body.gene]).length] = getData(req.body);
+        allData[req.body.grp]["menber"][req.body.gene][Object.keys(allData[req.body.grp]["menber"][req.body.gene]).length] = makeData.makeJson(req.body);
     }
 
     res.render('result.ejs',
@@ -96,20 +112,4 @@ app.post('/upload', (req, res) => {
         })
 })
 
-/** formからpostされたdataをdataObjectに詰める
- * 
- * @param {Object} query 
- */
-function getData(body) {
-    var data = {
-        name_jp: body.name_jp,
-        name_en: "",
-        birth: body.birth,
-        star: body.star,
-        height: body.height,
-        birthplace: body.birthplace,
-        blood: body.blood
-    }
-    return data
-}
 module.exports = app;
